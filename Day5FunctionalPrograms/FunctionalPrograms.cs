@@ -31,5 +31,18 @@ namespace Day5FunctionalPrograms
             Console.WriteLine("Heads: " + headsPercentage.ToString("0.00") + "%");
             Console.WriteLine("Tails: " + tailsPercentage.ToString("0.00") + "%");
         }
+
+        public static void LeapYear()
+        {
+            Console.WriteLine("Enter a year: ");
+            int year = int.Parse(Console.ReadLine());
+
+            bool isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+
+            if (isLeapYear)
+                Console.WriteLine(year + " is a leap year.");
+            else
+                Console.WriteLine(year + " is not a leap year.");
+        }
     }
 }
