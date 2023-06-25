@@ -64,5 +64,26 @@ namespace Day5FunctionalPrograms
                 Console.WriteLine("Invalid power value.");
             }
         }
+
+        public static void HarmonicNumber()
+        {
+            Console.WriteLine("Enter the harmonic value (N != 0): ");
+            int n = int.Parse(Console.ReadLine());
+
+            if (n != 0)
+            {
+                double sum = 0;
+                for (int i = 1; i <= n; i++)
+                {
+                    sum += 1.0 / i;
+                }
+
+                Console.WriteLine("The " + n + "th harmonic value is: " + sum);
+            }
+            else
+            {
+                Console.WriteLine("Invalid harmonic value.");
+            }
+        }
     }
 }

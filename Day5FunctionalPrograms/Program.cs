@@ -14,6 +14,7 @@ namespace Day5FunctionalPrograms
             Console.WriteLine("1. Flip Coin and print percentage of Heads and Tails");
             Console.WriteLine("2. Leap Year");
             Console.WriteLine("3. Power of 2");
+            Console.WriteLine("4. Harmonic Number");
             int choice = int.Parse(Console.ReadLine());
 
             switch (choice)
@@ -26,6 +27,9 @@ namespace Day5FunctionalPrograms
                     break;
                 case 3:
                     FunctionalPrograms.PowerOf2();
+                    break;
+                case 4:
+                    FunctionalPrograms.HarmonicNumber();
                     break;
                 default:
                     Console.WriteLine("Invalid choice.");
