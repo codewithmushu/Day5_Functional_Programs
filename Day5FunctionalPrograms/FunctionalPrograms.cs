@@ -44,5 +44,25 @@ namespace Day5FunctionalPrograms
             else
                 Console.WriteLine(year + " is not a leap year.");
         }
+
+        public static void PowerOf2()
+        {
+            Console.WriteLine("Enter the power value (0 <= N < 31): ");
+            int power = int.Parse(Console.ReadLine());
+
+            if (power >= 0 && power < 31)
+            {
+                int result = 1;
+                for (int i = 0; i <= power; i++)
+                {
+                    Console.WriteLine("2^" + i + " = " + result);
+                    result *= 2;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Invalid power value.");
+            }
+        }
     }
 }
