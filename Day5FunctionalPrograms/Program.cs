@@ -17,7 +17,7 @@ namespace Day5FunctionalPrograms
             Console.WriteLine("4. Harmonic Number");
             Console.WriteLine("5. Factors");
             Console.WriteLine("6. Compute Quotient and Remainder");
-            
+            Console.WriteLine("7. Swap Two Numbers");
             int choice = int.Parse(Console.ReadLine());
 
             switch (choice)
@@ -39,6 +39,9 @@ namespace Day5FunctionalPrograms
                     break;
                 case 6:
                     FunctionalPrograms.ComputeQuotientAndRemainder();
+                    break;
+                case 7:
+                    FunctionalPrograms.SwapTwoNumbers();
                     break;
                 default:
                     Console.WriteLine("Invalid choice.");

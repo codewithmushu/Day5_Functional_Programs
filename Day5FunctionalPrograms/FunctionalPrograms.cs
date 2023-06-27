@@ -117,6 +117,27 @@ namespace Day5FunctionalPrograms
             Console.WriteLine("Remainder: " + remainder);
         }
 
+        public static void SwapTwoNumbers()
+        {
+            Console.WriteLine("Enter the first number: ");
+            int num1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the second number: ");
+            int num2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Before swapping: ");
+            Console.WriteLine("First number: " + num1);
+            Console.WriteLine("Second number: " + num2);
+
+            int temp = num1;
+            num1 = num2;
+            num2 = temp;
+
+            Console.WriteLine("After swapping: ");
+            Console.WriteLine("First number: " + num1);
+            Console.WriteLine("Second number: " + num2);
+        }
+
 
     }
 }
