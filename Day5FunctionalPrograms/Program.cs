@@ -19,6 +19,7 @@ namespace Day5FunctionalPrograms
             Console.WriteLine("6. Compute Quotient and Remainder");
             Console.WriteLine("7. Swap Two Numbers");
             Console.WriteLine("8. Check Whether a Number is Even or Odd");
+            Console.WriteLine("9. Check Whether an Alphabet is Vowel or Consonant");
             int choice = int.Parse(Console.ReadLine());
 
             switch (choice)
@@ -46,6 +47,9 @@ namespace Day5FunctionalPrograms
                     break;
                 case 8:
                     FunctionalPrograms.CheckEvenOrOdd();
+                    break;
+                case 9:
+                    FunctionalPrograms.CheckVowelOrConsonant();
                     break;
                 default:
                     Console.WriteLine("Invalid choice.");

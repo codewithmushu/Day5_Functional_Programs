@@ -148,5 +148,25 @@ namespace Day5FunctionalPrograms
             else
                 Console.WriteLine(number + " is odd.");
         }
+
+        public static void CheckVowelOrConsonant()
+        {
+            Console.WriteLine("Enter an alphabet: ");
+            char ch = Console.ReadLine().ToLower()[0];
+
+            switch (ch)
+            {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    Console.WriteLine(ch + " is a vowel.");
+                    break;
+                default:
+                    Console.WriteLine(ch + " is a consonant.");
+                    break;
+            }
+        }
     }
 }
