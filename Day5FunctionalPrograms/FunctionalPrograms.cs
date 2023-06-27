@@ -101,5 +101,22 @@ namespace Day5FunctionalPrograms
                 }
             }
         }
+
+        public static void ComputeQuotientAndRemainder()
+        {
+            Console.WriteLine("Enter dividend: ");
+            int dividend = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter divisor: ");
+            int divisor = int.Parse(Console.ReadLine());
+
+            int quotient = dividend / divisor;
+            int remainder = dividend % divisor;
+
+            Console.WriteLine("Quotient: " + quotient);
+            Console.WriteLine("Remainder: " + remainder);
+        }
+
+
     }
 }
