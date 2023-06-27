@@ -20,6 +20,9 @@ namespace Day5FunctionalPrograms
             Console.WriteLine("7. Swap Two Numbers");
             Console.WriteLine("8. Check Whether a Number is Even or Odd");
             Console.WriteLine("9. Check Whether an Alphabet is Vowel or Consonant");
+            Console.WriteLine("10. Find the Largest Among Three Numbers");
+            Console.WriteLine("Enter your choice: ");
+
             int choice = int.Parse(Console.ReadLine());
 
             switch (choice)
@@ -51,6 +54,9 @@ namespace Day5FunctionalPrograms
                 case 9:
                     FunctionalPrograms.CheckVowelOrConsonant();
                     break;
+                case 10:
+                    FunctionalPrograms.FindLargestAmongThreeNumbers();
+                    break;  
                 default:
                     Console.WriteLine("Invalid choice.");
                     break;
