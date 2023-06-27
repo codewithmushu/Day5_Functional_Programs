@@ -15,6 +15,7 @@ namespace Day5FunctionalPrograms
             Console.WriteLine("2. Leap Year");
             Console.WriteLine("3. Power of 2");
             Console.WriteLine("4. Harmonic Number");
+            Console.WriteLine("5. Factors");
             int choice = int.Parse(Console.ReadLine());
 
             switch (choice)
@@ -30,6 +31,9 @@ namespace Day5FunctionalPrograms
                     break;
                 case 4:
                     FunctionalPrograms.HarmonicNumber();
+                    break;
+                case 5:
+                    FunctionalPrograms.Factors();
                     break;
                 default:
                     Console.WriteLine("Invalid choice.");

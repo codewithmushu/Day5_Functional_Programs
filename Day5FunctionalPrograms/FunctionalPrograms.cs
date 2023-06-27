@@ -85,5 +85,21 @@ namespace Day5FunctionalPrograms
                 Console.WriteLine("Invalid harmonic value.");
             }
         }
+
+        public static void Factors()
+        {
+            Console.WriteLine("Enter a number to find its prime factors: ");
+            int number = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Prime factors of " + number + " are: ");
+            for (int i = 2; i <= number; i++)
+            {
+                while (number % i == 0)
+                {
+                    Console.WriteLine(i);
+                    number /= i;
+                }
+            }
+        }
     }
 }
